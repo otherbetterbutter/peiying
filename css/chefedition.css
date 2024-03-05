@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #babcbb;
+    background-color: #000000;
+    font-family: 'Circular', sans-serif; 
+}
+
+.nav-item {
+    left: 60px;
+    margin-right: 20px; /* Adjust the value as needed */
+    text-decoration: none;
+    position: relative;
+    color: #babcbb;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the default position for all links */
+    left: 0;
+    width: 0;
+    height: 3px; /* Adjust the height of the line */
+    background-color: #babcbb;
+    border-radius: 2px; /* Adjust the border-radius for rounded edges */
+    transition: width 0.3s ease; /* Add smooth transition effect */
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.home-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust the default position for the home link */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Adjust the height of the line */
+    background-color: #babcbb;
+    border-radius: 30px; /* Adjust the border-radius for rounded edges */
+}
+
+.fullproject-content {
+    max-width: 100%; /* Set maximum width to 100% of the viewport */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    margin: 0 auto; /* Center the content within the viewport */
+}
+
+.project-content {
+    display: flex;
+    color: #babcbb;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 40px;
+    max-width: 100%; /* Set maximum width to 100% of the viewport */
+}
+
+.wrap {
+    margin-left: 20px;
+}
+
+.introduction1 {
+    color: #babcbb;
+    margin-bottom: 40px;
+    margin-top: 36px;
+    margin-left: 40px;
+    width: 22%;
+}
+
+.fullheader {
+    display: flex;
+}
+
+.project-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.45em;
+}
+
+.subtitle {
+    font-size: 1em;
+    line-height: 1.1;
+  margin-top: -14px;
+  padding: 6px 20px;
+  border: 1px solid white;
+  display: inline-block;
+  border-radius: 60px;
+  font-style: italic;
+}
+
+.image-container {
+    width: 100%; /* Use viewport width to fill the entire width of the screen */
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the entire width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline spacing */
+}
+
+.navbar a {
+    color: #babcbb; /* Change navigation font color */
+    text-decoration: none; /* Remove underline */
+}
+
+.texthere {
+    display: flex;
+}
+
+.text1,
+.text2 {
+    width: 50%;
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+}
+
+.text2 {
+    margin-left: -20%; /* Adjust the left margin for text2 */
+}
+
+h2 {
+    margin-left: 60px;
+}
+
+p {
+    width: 47%;
+    margin-left: 60px;
+}
+
+
+.resizable-image {
+    width: 47.5%;
+    height: 47.5%;
+}
+
+.leftoverimg{
+    display: flex;
+    margin-left: 2.2%;
+    width: 100%;
+}
+#number {
+    white-space: nowrap;
+}
+
+footer {
+    left: 40px;
+    height: 65px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    opacity: 80%;
+    display: flex;
+    color: #babcbb; /* Text color */
+}
+
+.fullbar {
+    display: flex;
+    width: 34%;
+    justify-content: space-between;
+}
+
+#output1 {
+    color: #babcbb; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+#output2, #contact{
+    padding-bottom: 30px;
+}
+
+.contactfull {
+    max-width: 60%;
+}
+
+.footerbar,
+.contactdetails {
+    max-width: 40%;
+}
+
+.footer-item {
+    display: block;
+    color: #babcbb;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerbar,
+    .contactdetails {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    #output2,
+    #contact {
+        padding-bottom: 0;
+    }
+}
+

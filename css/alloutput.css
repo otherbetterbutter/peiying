@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    background-color: black;
+    font-family: 'Futura', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Use space-around to evenly distribute the boxes */
+    height: 100vh;
+}
+
+.box {
+    flex: 0 0 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust 'contain' or 'cover' based on your preference */
+    object-position: center; /* Adjust position as needed */
+}
+
+.box .image {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-position: center; /* Adjust position as needed */
+}
+
+#simulife .image,
+#ccc .image {
+    width: 45%; /* Adjust the desired width percentage */
+    height: 45%; /* Adjust the desired height percentage */
+    object-fit: contain; /* Adjust 'contain' or 'cover' based on your preference */
+    object-position: center; /* Adjust position as needed */
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     display: none;  /* Uncomment when needed for hover effects */
+}
+
+
+.box:hover .video {
+    display: block;
+}
+
+
+/* Customize background colors as needed */
+#simulife {
+    background-color: #000000;
+}
+
+#ccc {
+    background-color: #000000;
+}
+
+#xin {
+    background-color: #000000;
+}
+
+#heritagemiles {
+    background-color: #000000;
+}
+
+#chefedition {
+    background-color: #000000;
+}
+
+#feel-the-warm {
+    background-color: #000000;
+}
