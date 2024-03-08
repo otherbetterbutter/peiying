@@ -107,8 +107,6 @@ p {
     margin-left: 60px;
 }
 
-/*section 2 */
-
 .button-container {
   display: flex;
   justify-content: center;
@@ -133,13 +131,24 @@ p {
 
 .video-container {
   text-align: center; /* Center the video elements */
+  margin: 20px 0; /* Add some margin for spacing */
 }
 
 .video {
-  width: 90%; /* Adjust the width as necessary */
-  max-width: 64%; /* Set a maximum width */
+  width: 80%; /* Adjust the width as necessary */
+  max-width: 800px; /* Set a maximum width */
   height: auto; /* Maintain aspect ratio */
   margin: 20px auto; /* Add some space and center the video */
+}
+
+.video-container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px; /* Adjust the height as necessary */
 }
 
 /* Additional styles to make the active button stand out */

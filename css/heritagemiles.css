@@ -1,4 +1,4 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -112,18 +112,19 @@ body {
 }
 
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Adjust as needed to fit your layout */
-    background-color: #f0f0f0; /* Optional background color */
-}
-
-.video-container {
-    width: 100%;
-    height: 100%;
+    width: 100vw; /* Use viewport width instead of percentage */
+    height: 100vh; /* Use viewport height instead of percentage */
     position: relative;
     overflow: hidden;
+    background-color: #f0f0f0; /* Optional background color */
+    margin: 0;
+}
+
+iframe {
+    width: 100%; /* Make the iframe fill the entire container */
+    height: 100%; /* Make the iframe fill the entire container */
+    border: none; /* Remove the border around the iframe */
+    margin: 0;
 }
 
 video {
