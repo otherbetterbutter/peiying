@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-o4oFlT2iKJDCR9jYLrjXDu3eYUJagpBLXp6kSrxz6daHToKQT3bS/zR0xGYYqF1N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/xin.css"> 
+</head>
+<body>
+
+  <div class="fullproject-content">
+    <div class="navbar">
+    <a href="index.html" class="nav-item" id="home">Home</a>
+        <a href="alloutput.html" class="nav-item home-link" id="output1">Output</a>
+    </div>
+</div>
+
+    <section class="intro">
+      <div class="intro-layout">
+        <div class="left-image">
+          <img src="assets/xin/xinfull.png" alt="Portrait" class="main-image" />
+        </div>
+        <div class="right-text">
+          <h2>XIN</h2>
+          <p class="client">GEHA — BRANDING </p>
+          <div class="strategy campaign-text">
+            <p>
+              This project was created for GEHA with the goal of attracting younger volunteers through vibrant and engaging collateral. The campaign, titled Xin, is rooted in the belief that courage can break down barriers and build harmony between generations.
+            </p>
+            <p>
+              <strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Why Xin?</strong><br>
+              Derived from the Chinese character “心” (which means “heart”), the Xin logo features warm, flowing lines that symbolize empathy and approachability. The branding is designed to resonate emotionally while staying visually inviting for a younger audience.
+            </p>
+            <p>
+              <strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Understanding Before Action</strong><br>
+              Research showed that Gen Z are keen to connect with older adults,  but lack understanding or feel unsure how to approach these interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <div class="output-grid-layout">
+        <div class="metadata">
+            <div class="meta-header">
+                <div>OUTPUTS</div>
+            </div>
+            <div class="meta-columns">
+                <div>1. Characters</div>
+                <div>4. Brochure</div>
+                <div>7. ID Cards</div>
+                <div>2. Social Media</div>
+                <div>5. 2 in 1 Card Game</div>
+                <div>6. Polo Shirt</div>
+                <div>3. Website</div>
+                <div>8. Your Breathing Break</div>
+            </div>
+        </div>
+
+        <div class="grid-images">
+            <div class="image-box">
+              <img src="assets/xin/characters.png" alt="">
+              <span class="image-label">1</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/ig.png" alt="">
+              <span class="image-label">2</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/website.mp4" alt="">
+              <span class="image-label">3</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/brochure.png" alt="">
+              <span class="image-label">4</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/cards.png" alt="">
+              <span class="image-label">5</span>
+            </div>
+            <div class="image-box tall-box">
+              <img src="assets/xin/breathing.mp4" alt="">
+              <span class="image-label">8</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/idcard.png" alt="">
+              <span class="image-label">7</span>
+            </div>
+            <div class="image-box">
+              <img src="assets/xin/polot.png" alt="">
+              <span class="image-label">6</span>
+            </div>
+          </div>
+          
+        
+
+    <section class="moodboard">
+        <h2>PROCESS</h2>
+        <p class="referencias">Building bridges across generations</p>
+        <p class="descripcion">
+          With XIN, I crafted a research-driven brand experience rooted in compassion and connection. Site visits and interviews with elderly individuals shaped the foundation, revealing key emotional gaps between Gen Z and older adults.
+            <br><br>
+            Framing empathy as the starting point, I designed a three-phase journey:
+            Pre-Engagement met volunteers where they are—on platforms like TikTok and Instagram.
+            Engagement brought empathy to life through mascots, games, and volunteer kits.
+            Post-Engagement sustained connection with personalized insights and a digital community hub.
+            Shortlisted for client presentation, XIN affirms the power of design to not just inform—but transform human connection.</p>
+
+        <div class="moodboard-carousel-wrapper">
+            <button class="carousel-arrow left" style="display: none;">←</button>
+            <div class="moodboard-carousel-track">
+              <img src="assets/xin/process1.png" alt="Mood 1">
+              <img src="assets/xin/process2.png" alt="Mood 2">
+              <img src="assets/xin/process3.png" alt="Mood 3">
+              <img src="assets/xin/process4.png" alt="Mood 4">
+            </div>
+            <button class="carousel-arrow right">→</button>
+        </div>
+    </section>
+
+    <footer>
+    </div> 
+    <div class="fullbar">
+    <div class="contactdetails">
+      <div class="contactfull">
+        <a href="#" class="footer-item" id="contact">Contact</a>
+        <a href="#" class="footer-item" id="number">+65 9624 8948</a>
+        <a href="#" class="footer-item" id="email">7peiying@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="js/htbt.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const track      = document.querySelector(".moodboard-carousel-track");
+          const slides     = track.querySelectorAll("img");
+          const leftArrow  = document.querySelector(".carousel-arrow.left");
+          const rightArrow = document.querySelector(".carousel-arrow.right");
+        
+          let currentIndex = 0;
+        
+          /* 1 – set track width dynamically */
+          track.style.width = `${slides.length * 100}%`;
+        
+          /* 2 – update position + arrows */
+          function update() {
+            const offset = (100 / slides.length) * currentIndex;
+            track.style.transform = `translateX(-${offset}%)`;
+            leftArrow.style.display  = currentIndex === 0                     ? "none" : "block";
+            rightArrow.style.display = currentIndex === slides.length - 1 ? "none" : "block";
+          }
+        
+          /* 3 – arrow click handlers */
+          leftArrow.addEventListener("click",  () => { if (currentIndex > 0)                 { currentIndex--; update(); }});
+          rightArrow.addEventListener("click", () => { if (currentIndex < slides.length - 1) { currentIndex++; update(); }});
+        
+          /* 4 – initial state */
+          update();
+        });
+        </script>
+        
+      
+
+</body>
+</html>

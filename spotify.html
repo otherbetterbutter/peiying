@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify, Let Loose</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/spotify.css"> 
+</head>
+<body>
+  <div class="fullproject-content">
+    <div class="navbar">
+    <a href="index.html" class="nav-item" id="home">Home</a>
+        <a href="alloutput.html" class="nav-item home-link" id="output1">Output</a>
+    </div>
+</div>
+
+  <section class="intro">
+    <div class="intro-layout">
+      <div class="left-image">
+        <img src="assets/spotify/spotify.mp4" alt="Portrait" class="main-image" />
+      </div>
+      <div class="right-text">
+        <h2>SimuLife</h2>
+        <p class="client">Spotify — Advertisement </p>
+        <div class="strategy campaign-text">
+            <p>Conceived as a speculative ad campaign, <em>Spotify, Let Loose</em> reframes music streaming as more than entertainment—it becomes a form of self-liberation in a hyper-paced urban world.</p>
+          
+            <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Why This Project?</strong><br>
+            In fast-moving cities, people often forget to pause. This campaign was my interpretation of Spotify’s core promise: music as a tool to relax, reset, and reawaken joy. By positioning Spotify as a pocket-sized permission to unwind, the ad encourages users to dance through the chaos—literally.</p>
+          
+            <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Understanding Before Action</strong><br>
+            While Spotify’s brand is often associated with playlists and productivity, I wanted to shift focus to music as release. Research showed that for many urban dwellers, the pressure to perform often overrides the instinct to simply enjoy the moment. <em>Spotify, Let Loose</em> responds with a visual narrative of movement, spontaneity, and personal escape—reminding us that letting go can be an act of strength.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="output-grid-layout">
+    <div class="metadata">
+      <div class="meta-header">
+        <div>OUTPUTS</div>
+      </div>
+    </div>
+
+    <div class="grid-images">
+      <div class="image-box"><img src="assets/spotify/spotify1.png" alt=""><span class="image-label"></span></div>
+      <div class="image-box"><img src="assets/spotify/spotify2.png" alt=""><span class="image-label"></span></div>
+      <div class="image-box"><img src="assets/spotify/spotify3.png" alt=""><span class="image-label"></span></div>
+    </div>
+
+    <section class="moodboard">
+      <h2>PROCESS</h2>
+      <p class="referencias">From concept to camera</p>
+      <p class="descripcion">
+        This project began with a question: what does it look like to unwind in a world that never stops moving? From that spark, I crafted <em>Spotify, Let Loose</em> as an ad campaign set in the everyday energy of Haji Lane—where stillness is rare, but music offers pause.        <br><br>
+        I led the creative direction from scripting to scene planning and visual rhythm. The process involved translating emotion into visuals—wide shots to capture movement, close-ups for intimacy, and pacing that mirrors the rising volume of the track. I focused on showing—not telling—how music can shift energy: from walking to dancing, from background noise to emotional presence.<br><br>
+        Every frame was intentional: the flip of hair, the tap of fingers, the beat syncing with daily life. Through this campaign, I wanted to turn a simple message—press play, let loose—into a visually immersive experience.
+      <!-- Moodboard carousel (mobile) -->
+      <div class="moodboard-carousel-wrapper">
+        <button class="carousel-arrow left" style="display: none;">←</button>
+        <div class="moodboard-carousel-track">
+          <img src="assets/spotify/process1.png" alt="Mood 1" />
+          <img src="assets/spotify/process2.png" alt="Mood 2" />
+          <img src="assets/spotify/process3.png" alt="Mood 3" />
+          <img src="assets/spotify/process4.png" alt="Mood 4" />
+        </div>
+        <button class="carousel-arrow right">→</button>
+      </div>
+    </section>
+
+    <footer>
+    </div> 
+    <div class="fullbar">
+    <div class="contactdetails">
+      <div class="contactfull">
+        <a href="#" class="footer-item" id="contact">Contact</a>
+        <a href="#" class="footer-item" id="number">+65 9624 8948</a>
+        <a href="#" class="footer-item" id="email">7peiying@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript for Moodboard Carousel -->
+  <script src="js/htbt.js" defer></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const track      = document.querySelector(".moodboard-carousel-track");
+        const slides     = track.querySelectorAll("img");
+        const leftArrow  = document.querySelector(".carousel-arrow.left");
+        const rightArrow = document.querySelector(".carousel-arrow.right");
+      
+        let currentIndex = 0;
+      
+        /* 1 – set track width dynamically */
+        track.style.width = `${slides.length * 100}%`;
+      
+        /* 2 – update position + arrows */
+        function update() {
+          const offset = (100 / slides.length) * currentIndex;
+          track.style.transform = `translateX(-${offset}%)`;
+          leftArrow.style.display  = currentIndex === 0                     ? "none" : "block";
+          rightArrow.style.display = currentIndex === slides.length - 1 ? "none" : "block";
+        }
+      
+        /* 3 – arrow click handlers */
+        leftArrow.addEventListener("click",  () => { if (currentIndex > 0)                 { currentIndex--; update(); }});
+        rightArrow.addEventListener("click", () => { if (currentIndex < slides.length - 1) { currentIndex++; update(); }});
+      
+        /* 4 – initial state */
+        update();
+      });
+      </script>
+</body>
+</html>

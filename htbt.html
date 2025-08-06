@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How To Buy Time</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/htbt.css">
+</head>
+<body>
+  <div class="fullproject-content">
+    <div class="navbar">
+    <a href="index.html" class="nav-item" id="home">Home</a>
+        <a href="alloutput.html" class="nav-item home-link" id="output1">Output</a>
+    </div>
+</div>
+
+  <section class="intro">
+    <div class="intro-layout">
+      <div class="left-image">
+        <img src="assets/htbt/Angle 1.png" alt="Portrait" class="main-image" />
+      </div>
+      <div class="right-text">
+        <h2>HOW TO BUY TIME</h2>
+        <p class="client">NUSAHL — CAMPAIGN </p>
+        <div class="strategy campaign-text">
+          <p>A winning academic project under Industry Studio Project & NUSAHL, <em>How to Buy Time</em> reframes longevity as an investment for working professionals.</p>
+          <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Why This Project?</strong><br> The idea emerged from a key insight: many young professionals trade health for productivity, only to wish they could reclaim that time later. This sparked the concept—what if you could ‘buy time’ now by investing in long-term wellbeing early?</p>
+          <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Understanding Before Action</strong><br> Longevity is often framed as an issue only relevant to the elderly. But younger individuals, especially in fast-paced industries, rarely see it as part of their current reality. Our goal was to shift that mindset—positioning longevity as a smart, future-focused lifestyle choice, like financial investing.
+          <br><br>By redefining health maintenance as a proactive gain rather than a burden, <em>How to Buy Time</em> encourages a perspective that is aspirational, not fear-based—making wellness a valuable asset, not an obligation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="output-grid-layout">
+    <div class="metadata">
+      <div class="meta-header">
+        <div>OUTPUTS</div>
+      </div>
+      <div class="meta-columns">
+        <div>1. Advertisement</div>
+        <div>4. Booklet</div>
+        <div>7. Website</div>
+        <div>2. Social Media</div>
+        <div>5. Metaverse</div>
+        <div>6. Gland Chart</div>
+        <div>3. Podcast</div>
+        <div>6. Newsletter</div>
+      </div>
+    </div>
+
+    <div class="grid-images">
+      <div class="image-box"><img src="assets/htbt/poster.png" alt=""><span class="image-label">1</span></div>
+      <div class="image-box"><img src="assets/htbt/post.png" alt=""><span class="image-label">2</span></div>
+      <div class="image-box"><img src="assets/htbt/podcast.png" alt=""><span class="image-label">3</span></div>
+      <div class="image-box"><img src="assets/htbt/book.png" alt=""><span class="image-label">4</span></div>
+      <div class="image-box"><img src="assets/video2/htbt/Angle 1.png" alt=""><span class="image-label">5</span></div>
+      <div class="image-box tall-box"><img src="assets/htbt/newsletter.png" alt=""><span class="image-label">6</span></div>
+      <div class="image-box"><img src="assets/htbt/website.png" alt=""><span class="image-label">7</span></div>
+      <div class="image-box"><img src="assets/htbt/chart.png" alt=""><span class="image-label">8</span></div>
+    </div>
+
+    <section class="moodboard">
+      <h2>PROCESS</h2>
+      <p class="referencias">Designing with intention, leading with clarity</p>
+      <p class="descripcion">
+        As the team lead, I guided the creative direction and ensured the project remained aligned with our core insight: time, once lost, can’t be bought back. From early research to final execution, I structured our process into distinct phases—insight gathering, ideation, prototyping, and refinement.
+        <br><br>
+        We began by identifying the emotional and behavioral disconnect young professionals have with long-term wellbeing. Through moodboards and user personas, we translated this into visual narratives that felt urgent yet hopeful. I facilitated regular critiques, clarified task scopes, and maintained design consistency across our outputs. Every decision was intentional—from typography to tone—built around the central provocation: what does it mean to buy time?
+      </p>
+
+      <!-- Moodboard carousel (mobile) -->
+      <div class="moodboard-carousel-wrapper">
+        <button class="carousel-arrow left" style="display: none;">←</button>
+        <div class="moodboard-carousel-track">
+          <img src="assets/htbt/process1.png" alt="Mood 1" />
+          <img src="assets/htbt/process2.png" alt="Mood 2" />
+          <img src="assets/htbt/process3.png" alt="Mood 3" />
+          <img src="assets/htbt/process4.png" alt="Mood 4" />
+        </div>
+        <button class="carousel-arrow right">→</button>
+      </div>
+    </section>
+
+    <footer>
+    </div> 
+    <div class="fullbar">
+    <div class="contactdetails">
+      <div class="contactfull">
+        <a href="#" class="footer-item" id="contact">Contact</a>
+        <a href="#" class="footer-item" id="number">+65 9624 8948</a>
+        <a href="#" class="footer-item" id="email">7peiying@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript for Moodboard Carousel -->
+  <script src="js/htbt.js" defer></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const track      = document.querySelector(".moodboard-carousel-track");
+        const slides     = track.querySelectorAll("img");
+        const leftArrow  = document.querySelector(".carousel-arrow.left");
+        const rightArrow = document.querySelector(".carousel-arrow.right");
+      
+        let currentIndex = 0;
+      
+        /* 1 – set track width dynamically */
+        track.style.width = `${slides.length * 100}%`;
+      
+        /* 2 – update position + arrows */
+        function update() {
+          const offset = (100 / slides.length) * currentIndex;
+          track.style.transform = `translateX(-${offset}%)`;
+          leftArrow.style.display  = currentIndex === 0                     ? "none" : "block";
+          rightArrow.style.display = currentIndex === slides.length - 1 ? "none" : "block";
+        }
+      
+        /* 3 – arrow click handlers */
+        leftArrow.addEventListener("click",  () => { if (currentIndex > 0)                 { currentIndex--; update(); }});
+        rightArrow.addEventListener("click", () => { if (currentIndex < slides.length - 1) { currentIndex++; update(); }});
+      
+        /* 4 – initial state */
+        update();
+      });
+      </script>
+</body>
+</html>

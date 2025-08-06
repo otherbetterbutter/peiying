@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How To Buy Time</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/simulife.css"> 
+</head>
+<body>
+  <div class="fullproject-content">
+    <div class="navbar">
+    <a href="index.html" class="nav-item" id="home">Home</a>
+        <a href="alloutput.html" class="nav-item home-link" id="output1">Output</a>
+    </div>
+</div>
+
+  <section class="intro">
+    <div class="intro-layout">
+      <div class="left-image">
+        <img src="assets/simulife/eyewear.mp4" alt="Portrait" class="main-image" />
+      </div>
+      <div class="right-text">
+        <h2>SimuLife</h2>
+        <p class="client">SimuLife — Innovation </p>
+        <div class="strategy campaign-text">
+          <p>Developed as a speculative product under the Future Interfaces module, <em>Simulife</em> reimagines cohabitation as an emotionally intelligent, tech-enabled experience—helping couples assess compatibility before taking the leap to live together.</p>
+        
+          <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Why Simulife?</strong><br>
+          Simulife was born from a simple but urgent insight: many modern relationships suffer not from lack of love, but from lack of understanding. With over half of early divorces attributed to incompatibility, we asked—how can design intervene before conflict escalates? Using smart glasses powered by AR and behavioral analytics, Simulife offers couples a real-time preview of shared life, helping them navigate emotional and logistical challenges with greater clarity.</p>
+        
+          <p><strong style="display:inline-block; margin-bottom:0.5em; margin-top: 0.5em;">Understanding Before Action</strong><br>
+          Compatibility isn’t just about chemistry—it’s about how two lives fit together under pressure, over time. Research revealed that many couples move in without fully grasping how stress, communication styles, or daily habits will impact their relationship. Simulife blends emerging technologies—like natural language processing, machine learning, and computer vision—to simulate domestic life, track emotional responses, and even manage shared tasks. In doing so, it empowers users to make informed, empathetic decisions grounded in emotional awareness, not assumption.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="output-grid-layout">
+    <div class="metadata">
+      <div class="meta-header">
+        <div>OUTPUTS</div>
+      </div>
+    </div>
+
+    <div class="grid-images">
+      <div class="image-box"><img src="assets/simulife/simulife1.png" alt=""><span class="image-label"></span></div>
+      <div class="image-box"><img src="assets/simulife/simulife2.png" alt=""><span class="image-label"></span></div>
+      <div class="image-box"><img src="assets/simulife/simulife3.png" alt=""><span class="image-label"></span></div>
+    </div>
+
+    <section class="moodboard">
+      <h2>PROCESS</h2>
+      <p class="referencias">Turning conflict into clarity.</p>
+      <p class="descripcion">
+        I began with one core insight: many couples move in together without fully understanding how their lives will truly intersect. To address this, I designed Simulife as a tool for emotional and practical foresight.        <br><br>
+        My process combined behavioral research, systems thinking, and speculative tech. I mapped daily cohabitation scenarios, focusing on emotional compatibility, communication friction, and shared responsibilities.<br> <br> insights shaped the glasses’ features—AR overlays, emotion tracking, and real-time feedback powered by NLP and machine learning.
+        Every design choice aimed to balance technology with empathy. Simulife isn’t just a gadget—it’s a bridge between intention and experience, helping couples make informed, heart-led decisions.      </p>
+
+      <!-- Moodboard carousel (mobile) -->
+      <div class="moodboard-carousel-wrapper">
+        <button class="carousel-arrow left" style="display: none;">←</button>
+        <div class="moodboard-carousel-track">
+          <img src="assets/htbt/process1.png" alt="Mood 1" />
+          <img src="assets/htbt/process2.png" alt="Mood 2" />
+          <img src="assets/htbt/process3.png" alt="Mood 3" />
+          <img src="assets/htbt/process4.png" alt="Mood 4" />
+        </div>
+        <button class="carousel-arrow right">→</button>
+      </div>
+    </section>
+
+    <footer>
+    </div> 
+    <div class="fullbar">
+    <div class="contactdetails">
+      <div class="contactfull">
+        <a href="#" class="footer-item" id="contact">Contact</a>
+        <a href="#" class="footer-item" id="number">+65 9624 8948</a>
+        <a href="#" class="footer-item" id="email">7peiying@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- JavaScript for Moodboard Carousel -->
+  <script src="js/htbt.js" defer></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const track      = document.querySelector(".moodboard-carousel-track");
+        const slides     = track.querySelectorAll("img");
+        const leftArrow  = document.querySelector(".carousel-arrow.left");
+        const rightArrow = document.querySelector(".carousel-arrow.right");
+      
+        let currentIndex = 0;
+      
+        /* 1 – set track width dynamically */
+        track.style.width = `${slides.length * 100}%`;
+      
+        /* 2 – update position + arrows */
+        function update() {
+          const offset = (100 / slides.length) * currentIndex;
+          track.style.transform = `translateX(-${offset}%)`;
+          leftArrow.style.display  = currentIndex === 0                     ? "none" : "block";
+          rightArrow.style.display = currentIndex === slides.length - 1 ? "none" : "block";
+        }
+      
+        /* 3 – arrow click handlers */
+        leftArrow.addEventListener("click",  () => { if (currentIndex > 0)                 { currentIndex--; update(); }});
+        rightArrow.addEventListener("click", () => { if (currentIndex < slides.length - 1) { currentIndex++; update(); }});
+      
+        /* 4 – initial state */
+        update();
+      });
+      </script>
+</body>
+</html>
